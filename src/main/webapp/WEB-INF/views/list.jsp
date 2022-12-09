@@ -37,10 +37,14 @@
             var a = confirm("정말로 삭제하겠습니까?");
             if(a) location.href='deleteok/'+id;
         }
+        function do_function(){
+            alert("로그아웃되었습니다.");
+        }
     </script>
 </head>
 <body>
 <h1>자유게시판</h1>
+<p> 안녕하세요 님<a href="../login/logout" onclick="do_function()">logout</a></p>
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
